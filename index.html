@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class="main">
+                <section class="inputs">
+                    <input type="text" placeholder="Enter your City Name " id="cityinput">
+                    <input type="submit" value="Search" id="add">
+                    <button placeholder="submit" id="add"></button>
+                </section>
+
+            <section class="display">
+                <div class="wrapper">
+                    <h2 id="cityoutput"></h2>
+                    <p id="description"></p>
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+                    <div class="favorite-btn-container">
+                        <button class="favorite-btn" id="favorite-btn" onclick="toggleFavorite()">Add to Favorites</button>
+                    </div>
+                    <div class="favorites-container">
+                        <h3>Favorite Cities</h3>
+                        <ol id="favorite-cities-list"></ol>
+                    </div>  
+                </div>
+              
+            </section>
+           
+            </section>
+        </div>
+       
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
